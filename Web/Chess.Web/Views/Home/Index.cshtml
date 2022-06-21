@@ -1,0 +1,21 @@
+﻿@{
+    this.ViewData["Title"] = "Home";
+}
+
+<section class="home-title-container">
+    <h1 class="home-title title-text">Шахматы</h1>
+</section>
+<hr />
+<section class="cards-container d-lg-flex">
+    <div class="card p-0 mb-1 col-lg-4 m-lg-0">
+        <div class="card-text-container">
+            <h4 class="card-text-title"><a asp-controller="Game" asp-action="Index"><i class="fas fa-play"></i> Играть</a></h4>
+        </div>
+    </div>  
+    <div class="card p-0 mb-1 col-lg-4 m-lg-0">
+        <div class="card-text-container">
+            <h4 class="card-text-title"><a asp-controller="Stats" asp-action="Index"><i class="fas fa-chart-bar"></i> Статистика</a></h4>
+        </div>
+    </div>
+</section>
+<hr />
